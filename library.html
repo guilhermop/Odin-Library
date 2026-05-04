@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="librarystyle.css">
+    <title>My library</title>
+</head>
+<body>
+    <button id="newBookBtn">New Book</button>
+
+    <!-- dialog -->
+    <dialog id="bookDialog">
+        <form id="bookForm">
+            <h2>Add a New Book</h2>
+
+            <label>Title:
+                <input type="text" id="title" required>
+            </label>
+
+            <label>Author:
+                <input type="text" id="author" required>
+            </label>
+
+            <label>Pages:
+                <input type="number" id="pages" required>
+            </label>
+
+            <label>Recommended?
+                <input type="checkbox" id="recommendation">
+            </label>
+
+            <label>Read?
+                <input type="checkbox" id="read">
+            </label>
+
+            <!-- buttons always last -->
+            <div class="form-buttons">
+                <button type="submit">Add Book</button>
+                <button type="button" id="cancelBtn">Cancel</button>
+            </div>
+        </form>
+    </dialog>
+
+    <div class="library" id="library"></div>
+    <script src="libraryj.js"></script>
+</body>
+</html>
